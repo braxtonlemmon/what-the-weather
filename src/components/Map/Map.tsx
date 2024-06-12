@@ -1,6 +1,9 @@
 import { latLng } from "leaflet";
 import { TileLayer, MapContainer, Marker, Popup } from "react-leaflet";
 import MapActivity from "./MapActivity";
+import "leaflet/dist/leaflet.css";
+import "leaflet-defaulticon-compatibility";
+import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css";
 
 type MapProps = {
   latLng: [number, number];
