@@ -7,7 +7,6 @@ type MapActivityProps = {
 const MapActivity = ({ setLatLong }: MapActivityProps) => {
   const map = useMapEvents({
     click: (e) => {
-      console.log("tag e", e.latlng.lat, e.latlng.lng);
       setLatLong([e.latlng.lat, e.latlng.lng]);
     },
   });
